@@ -8,7 +8,7 @@ origin: community
 
 Connects Claude Code to [SocialClaw](https://getsocialclaw.com) for agent-driven social media publishing across 13 platforms through a single workspace API key.
 
-Use this skill when the user needs to:
+## When to Activate
 
 - publish content to X, LinkedIn, Instagram, TikTok, or other platforms
 - schedule a post campaign across multiple platforms at once
@@ -26,7 +26,7 @@ export SC_API_KEY="<workspace-key>"
 curl -sS -H "Authorization: Bearer $SC_API_KEY" https://getsocialclaw.com/v1/keys/validate
 
 # Install CLI (optional but recommended)
-npm install -g socialclaw
+npm install -g socialclaw@0.1.12
 socialclaw login --api-key <workspace-key>
 ```
 
@@ -111,6 +111,5 @@ socialclaw posts list --json
 
 ## Source
 
-- GitHub: https://github.com/ndesv21/socialclaw
-- npm: `npm install -g socialclaw`
+- npm: `npm install -g socialclaw@0.1.12`
 - Dashboard: https://getsocialclaw.com/dashboard
