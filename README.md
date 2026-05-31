@@ -82,6 +82,13 @@ This repo is the raw code only. The guides explain everything.
 
 ## What's New
 
+### v1.10.1 — Stable Reliability Patch (May 2026)
+
+- **Stable-channel momentum while ECC 2.0 remains prerelease** — `1.10.1` keeps the public npm/release lane moving without overstating control-plane GA readiness.
+- **Continuous-learning reliability** — observer analysis now has a larger default turn budget for the 500-line analysis window, plus clearer warnings when legacy homunculus data exists outside the active ECC data path.
+- **Command and audit hardening** — `/instinct-status` resolves the active plugin root more reliably, and harness auditing handles missing package metadata more defensively.
+- **Repository-surface cleanup** — contribution and translated marketplace links now point at the current `affaan-m/ECC` public repo surface.
+
 ### v1.10.0 — Surface Refresh, Operator Workflows, and ECC 2.0 Alpha (Apr 2026)
 
 - **Public surface synced to the live repo** — metadata, catalog counts, plugin manifests, and install-facing docs now match the actual OSS surface: 38 agents, 156 skills, and 72 legacy command shims.
@@ -1250,7 +1257,7 @@ ECC is the **first plugin to maximize every major AI coding tool**. Here's how e
 | **Context File** | CLAUDE.md + AGENTS.md | AGENTS.md | AGENTS.md | AGENTS.md |
 | **Secret Detection** | Hook-based | beforeSubmitPrompt hook | Sandbox-based | Hook-based |
 | **Auto-Format** | PostToolUse hook | afterFileEdit hook | N/A | file.edited hook |
-| **Version** | Plugin | Plugin | Reference config | 1.10.0 |
+| **Version** | Plugin | Plugin | Reference config | 1.10.1 |
 
 **Key architectural decisions:**
 - **AGENTS.md** at root is the universal cross-tool file (read by all 4 tools)

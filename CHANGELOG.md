@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.10.1 - 2026-05-31
+
+### Highlights
+
+- Patch release for the stable `1.10.x` line while ECC 2.0 remains on the prerelease channel.
+- Backported low-risk reliability fixes for harness auditing, continuous-learning observer defaults, legacy homunculus path detection, and `/instinct-status` plugin-root resolution.
+- Refreshed contribution and translated marketplace links to point at the current `affaan-m/ECC` repository surface.
+
+### Fixes
+
+- Made `scripts/harness-audit.js` handle missing or malformed `package.json` data more defensively.
+- Raised the continuous-learning observer default turn budget to better match the 500-line analysis default.
+- Warned when populated legacy `~/.claude/homunculus` data exists but the current CLI is reading from the XDG-based ECC data path.
+- Updated `/instinct-status` to resolve the active plugin root instead of falling back to stale legacy install paths.
+
+### Notes
+
+- `1.10.1` intentionally avoids claiming ECC 2.0 GA readiness. The control-plane, dedicated ECC agent, and agentic IDE work continues on the `2.0.0-rc` line.
+
 ## 1.10.0 - 2026-04-05
 
 ### Highlights
